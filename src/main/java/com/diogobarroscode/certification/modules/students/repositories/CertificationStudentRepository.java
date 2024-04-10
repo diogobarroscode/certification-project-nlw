@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.diogobarroscode.certification.modules.students.entities.CertificationStudentEntity;
 
-public interface CertificationStudentRepository extends JpaRepository<CertificationStudentRepository, UUID> {
+public interface CertificationStudentRepository extends JpaRepository<CertificationStudentEntity, UUID> {
 	
 	@Query("SELECT c FROM certifications c "
 			+ "INNER JOIN c.studentEntity std "
